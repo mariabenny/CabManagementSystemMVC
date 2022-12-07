@@ -1,0 +1,33 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-6">
+                <img src="~/images/login.jpg"
+                     class="img-fluid" alt="Sample image" style="margin-left: 13%; margin-bottom: 45%;">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1" style="margin-top: -284px;">
+                <form method="post">
+                    <div>
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="d-grid mt-4">
+                        <button class="btn btn-dark">Login</button>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
