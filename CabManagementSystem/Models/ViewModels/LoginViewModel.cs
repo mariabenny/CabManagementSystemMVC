@@ -10,6 +10,7 @@
         [Required]
         [StringLength(25)]
         [Display(Name = "Password")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
     }
 }

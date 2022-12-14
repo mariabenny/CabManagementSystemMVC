@@ -64,7 +64,8 @@ namespace CabManagementSystem.Areas.Accounts.Controllers
                     }
                     else if (await _userManager.IsInRoleAsync(user, "Cab_User"))
                     {
-                        return Redirect("/accounts/home/editprofile");
+                        //return Redirect("/accounts/home/editprofile");
+                        return Redirect("/");
                     }
                 }
             }

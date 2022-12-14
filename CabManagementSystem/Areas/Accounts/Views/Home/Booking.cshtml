@@ -39,9 +39,16 @@
                 @*<div class="d-grid mt-4">                    
                     <button class="btn btn-primary">Login</button>                    
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>                    
-                </div>*@                    
+                </div>*@              
+           @* <div class="d-grid mt-4">
+                <button class="glow-on-hover btn-warning" style="width:438px" onclick="alert(" Paid")">Pay</button>
+
+            </div>*@
+            <div class="d-grid mt-4">
+                <button style="width:438px;border-radius:10px" onclick="return confirm('Do you want to finish payement?')">Payment</button>
+            </div>
             <div  class="d-grid mt-4" style="margin-top:10px">
-                <button class="glow-on-hover btn-primary ">Book</button>                        
+                <button class="glow-on-hover btn-dark ">Book</button>                        
                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>                   
                 </div>              
         </form>            

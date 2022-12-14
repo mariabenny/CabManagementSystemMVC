@@ -2,21 +2,7 @@
 @{
     ViewData["Title"] = "Register";
 }
-@*<h1>Register</h1>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 offset-sm-3">
-            <form method="post">
-                
-                <div class="d-grid mt-4">
-                    <button class="btn btn-primary">Register</button>
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>*@
 
 
 
@@ -31,7 +17,7 @@
     <div class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5">
-          <img src="~/images/user.jpg"
+          <img class="img1" src="~/images/user.jpg"
                      class="img-fluid" alt="Sample image" style="margin-left: 13%; margin-bottom: 45%;">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
@@ -71,7 +57,7 @@
                         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
                     <div class="d-grid mt-4">
-                    <button class="btn btn-dark">Register</button>
+                        <button class=" btn btn-dark" >Register</button>
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div asp-validation-summary="All">
 

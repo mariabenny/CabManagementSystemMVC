@@ -8,8 +8,26 @@
     <div class="d-flex">
     <div>
     <img class="img" src="images/cabbg.jpg"/>
+
 </div>
 <div class="align-center">
- <h2>You are welcome..!</h2>
-</div>
+ @*<h2>You are welcome..!</h2>*@
+ @if (User.Identity.IsAuthenticated)
+    {
+        <h2 class="instructions"> Hello,  You are Successfully Logined.</h2>           
+        <h2 class="instructions"> Enjoy your Rides.</h2>                 
+        <div class=" d-grid mt-3" style="align-items:center ;margin:100px 150px;">
+                <a href="https://localhost:7069/Accounts/Home/editprofile">
+                    <button class="btn btn-danger">Book Now..!</button>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>                    
+        </div>
+    }
+ else
+    {
+        <h2 class="instructions"> Login to Book your Rides....!</h2>   
+        <ul class="instructions2">      
+            <li> If you dont have an Account please Create an Acount.</li>       
+            <li> Set your current Location and Destination.</li>   
+        </ul>
+    }
 </div>

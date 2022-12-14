@@ -20,11 +20,16 @@ body {
     border-radius:5px;
     width:60%;
 }
+.img1 {
+    width: 90%;
+}
 .rbtn{
     float:right;
 }
 
-
+.button:hover{
+    background-color:red;
+}
 
 
 
@@ -70,3 +75,4 @@ body {
     cursor: pointer;
     border: solid 1px #BA68C8
 }
+
